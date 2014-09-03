@@ -1,0 +1,21 @@
+{
+    "name": "docular-markdown-plugin",
+    "version": "0.0.1",
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://opensource.org/licenses/MIT"
+        }
+    ],
+    "main": "index.js",
+    "engines": {
+        "node": ">= 0.10.0"
+    },
+    "dependencies": {
+        "q": "*",
+        "inherit": "*",
+        "node.extend": "*",
+        "fs-extra": "*",
+        "grunt": "*"
+    }
+}
