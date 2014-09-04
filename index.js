@@ -2,6 +2,9 @@ var nodeExtend = require('node.extend');
 var Q = require('q');
 var fse = require('fs-extra');
 var path = require('path');
+var request = require('request');
+var grunt = require('grunt');
+var zlib = require('zlib');
 
 var DocModel = function () {
     Object.defineProperty(this, "id", {

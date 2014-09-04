@@ -13,9 +13,11 @@
     },
     "dependencies": {
         "q": "*",
+        "request": "*",
         "inherit": "*",
         "node.extend": "*",
         "fs-extra": "*",
-        "grunt": "*"
+        "grunt": "*",
+        "tar": "*"
     }
 }
