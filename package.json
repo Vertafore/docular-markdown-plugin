@@ -17,7 +17,7 @@
         "inherit": "*",
         "node.extend": "*",
         "fs-extra": "*",
-        "grunt": "*",
+        "glob": "*",
         "tar": "*"
     }
 }

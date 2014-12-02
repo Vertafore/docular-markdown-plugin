@@ -3,8 +3,8 @@ var Q = require('q');
 var fse = require('fs-extra');
 var path = require('path');
 var request = require('request');
-var grunt = require('grunt');
 var zlib = require('zlib');
+var glob = require('glob');
 
 var DocModel = function () {
     Object.defineProperty(this, "id", {
@@ -94,7 +94,7 @@ Plugin.prototype = nodeExtend(Plugin.prototype, {
                         groupTitle: 'Docular Docs',
                         groupId: 'docular',
                         groupIcon: 'lightbulb-o',
-                        files: grunt.file.expand(['downloaded/docular/docular-master/docs/**/*.*'])
+                        files: glob.sync('downloaded/docular/docular-master/docs/**/*.*')
                     });
 
                     deferred.resolve();
