@@ -109,7 +109,7 @@ Plugin.prototype = nodeExtend(Plugin.prototype, {
     parseFile: function (fileData, promises) {
         if(fileData.extension === 'md') {
             fileData.docs.push({
-                fileName: fileData.fileName,
+                file: fileData.fileName,
                 handler: 'markdown',
                 content: fileData.content
             })
